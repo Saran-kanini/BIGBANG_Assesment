@@ -1,6 +1,6 @@
 ﻿namespace BIGBANG_Assesment.Repository
 {
-    public class RoomRepository:IRoom
+    public class CustomerRepository
     {
     }
 }
