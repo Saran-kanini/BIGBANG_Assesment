@@ -1,4 +1,5 @@
 using BIGBANG_Assesment.Models;
+using BIGBANG_Assesment.Repositories;
 using BIGBANG_Assesment.Repository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -42,6 +43,8 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddScoped<IHotel, HotelRepository>();
 builder.Services.AddScoped<IRoom, RoomRepository>();
 builder.Services.AddScoped<IReservationRepository, ReservationRepository>();
+builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+
 
 var app = builder.Build();
 
