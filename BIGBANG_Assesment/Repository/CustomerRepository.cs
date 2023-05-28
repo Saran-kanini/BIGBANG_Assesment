@@ -1,5 +1,6 @@
 ﻿using BIGBANG_Assesment.Models;
 using BIGBANG_Assesment.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace BIGBANG_Assesment.Repository
 {
@@ -14,7 +15,7 @@ namespace BIGBANG_Assesment.Repository
 
         public IEnumerable<Customer> GetAllCustomers()
         {
-            return _dbContext.Customers.ToList();
+            return _dbContext.Customers.Include(x => x.Reservations).ToList();
         }
 
         public Customer GetCustomerById(int id)
