@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIGBANG_Assesment", "BIGBANG_Assesment\BIGBANG_Assesment.csproj", "{11BB79C7-6072-40DC-B841-C30D24D23B74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11BB79C7-6072-40DC-B841-C30D24D23B74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11BB79C7-6072-40DC-B841-C30D24D23B74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11BB79C7-6072-40DC-B841-C30D24D23B74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11BB79C7-6072-40DC-B841-C30D24D23B74}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39E3CB75-FC3B-41E4-8F14-9334B7830730}
+	EndGlobalSection
+EndGlobal
