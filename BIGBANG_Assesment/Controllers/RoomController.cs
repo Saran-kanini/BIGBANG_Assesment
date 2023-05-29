@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BIGBANG_Assesment.Controllers
 {
-   /* [Authorize]*/
+    /*[Authorize]*/
     [Route("api/[controller]")]
     [ApiController]
     public class RoomController : ControllerBase
@@ -16,6 +16,7 @@ namespace BIGBANG_Assesment.Controllers
         {
             this.r = r;
         }
+
         [HttpGet]
         public IEnumerable<Room> Get()
         {
@@ -33,16 +34,19 @@ namespace BIGBANG_Assesment.Controllers
         {
             return r.PostRoom(room);
         }
+
         [HttpPut("{Room_Id}")]
         public Room PutRoom(int Room_Id, Room room)
         {
             return r.PutRoom(Room_Id, room);
         }
+
         [HttpDelete("{Room_Id}")]
         public Room DeleteRoom(int Room_Id)
         {
             return r.DeleteRoom(Room_Id);
         }
+
         [HttpGet("filterByPrice")]
         public IEnumerable<Room> GetRoomsByPrice(decimal minPrice, decimal maxPrice)
         {
